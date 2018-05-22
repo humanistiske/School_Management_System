@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A9CDC2C-C34A-18FC-AB6E-24B87B367FB0" containerWithKeyObject="10279A11-2A94-C011-1947-54AE162373A8" localFKIndex="01AC98E0-5499-49B2-A2C1-E5994F685A77" name="CLASSSUBJECTDIST_IBFK_1">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>CLASSSUBJECTDIST_IBFK_1</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<referredTableLongName>SCHOOL_WEBSPACE.SUBJECT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97A2578A-F9AA-CDB3-90AB-57A42E901988</referredTableID>
+<keyObject>8D2D92BB-4C9D-9996-F8FD-1E150B9AA86C</keyObject>
+<referredKeyID>8D2D92BB-4C9D-9996-F8FD-1E150B9AA86C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SUBJECTID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STUDYMATERIAL" directorySegmentName="seg_0" id="E09E817D-757C-59E5-FBE1-55A3BE57BA93">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>577C3286-F14C-6647-E452-1A646374E2C8</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FILE_" id="0922905A-1096-A385-E88C-F22626CE0749">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPLOAD_DATE_TIME" id="2492E32B-2400-16F1-0D7F-461B86E7FFF3">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="486FE02F-AEC4-AFA5-EA6C-5A3DFBC44854">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL_DOWNLOADS" id="8329FEE2-E398-98E3-CD5B-1D68A82676D2">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILENAME" id="C8C7B174-26EC-6EE6-DEB5-AD1B7B366344">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIZE_" id="CF263DE3-F6FA-1928-81A3-0F46F8A1C8C5">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRIMARY_19" id="160B9CA6-59D7-3421-E503-C2B1A54658E4">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STUDYMATERIAL_IBFK_1" id="5B6B19AC-9589-6A6F-EDF1-C8967D8968DA">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000020928C00003$$" id="99640812-25A7-CC87-7E9D-5982A2EF9A46">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>FILE_</column>
+<logging>YES</logging>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIMARY_19" id="E06CF517-5F43-FCEE-0038-CCCDBF26944B">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<existingIndex>160B9CA6-59D7-3421-E503-C2B1A54658E4</existingIndex>
+<indexSegment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USERTYPE" directorySegmentName="seg_0" id="D489B871-AF3B-74F6-F087-1D4B91B9759B">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>577C3286-F14C-6647-E452-1A646374E2C8</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USERTYPEID" id="577B41E1-3531-F8E7-DDCF-DADBF17D67E5">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERTYPE_NAME" id="989B879A-E413-E404-2DCB-9B96BB841DAA">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRIMARY_1" id="DD4E2565-4120-1326-C368-46A3FE4A950F">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIMARY_1" id="1C7E04C1-5D98-3CD4-1E26-D686D2A5EF3E">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<existingIndex>DD4E2565-4120-1326-C368-46A3FE4A950F</existingIndex>
+<indexSegment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

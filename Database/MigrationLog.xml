@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<log>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConverterWorker</class>
+  <message>Catalog MySQL, Schema school_webspace coalesced to single schema school_webspace</message>
+  <key>Convert.COALESCED</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>MySQL</param>
+  <param>school_webspace</param>
+  <param>school_webspace</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classid' on table 'class' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classid</param>
+  <param>class</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@5c70d609</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classroomid' on table 'class' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classroomid</param>
+  <param>class</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@50ff490b</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'usertypeid' on table 'usertype' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>usertypeid</param>
+  <param>usertype</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@45f7b529</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classroomid' on table 'classroom' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classroomid</param>
+  <param>classroom</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@419c83ed</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'userid' on table 'logindb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>userid</param>
+  <param>logindb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@1b06c549</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'userid' on table 'staffaccountsdb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>userid</param>
+  <param>staffaccountsdb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@311b7033</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'id' on table 'userdb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>id</param>
+  <param>userdb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@49bdd5c4</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Following objects have had name changes applied</message>
+  <key>Convert.IDENTIFIER_TRANSFORMED_HEADING</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@3517a3bd</param>
+
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'date' Changed to 'date_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Index 'fk_attendance_classStudentSubjectID' Changed to 'fk_attendance_classStudentSubj' (Invalid characters, reserved word or clash)</message>
+  <param>fk_attendance_classStudentSubj, MD_INDEXES, 55601Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'file' Changed to 'file_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'size' Changed to 'size_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_1' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_1, MD_CONSTRAINTS, 75151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_2' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_2, MD_CONSTRAINTS, 75351Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_3' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_3, MD_CONSTRAINTS, 75551Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_4' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_4, MD_CONSTRAINTS, 75851Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_5' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_5, MD_CONSTRAINTS, 76151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_6' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_6, MD_CONSTRAINTS, 76351Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_7' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_7, MD_CONSTRAINTS, 76651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_8' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_8, MD_CONSTRAINTS, 76951Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_9' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_9, MD_CONSTRAINTS, 77251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_10' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_10, MD_CONSTRAINTS, 77451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_11' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_11, MD_CONSTRAINTS, 77651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_12' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_12, MD_CONSTRAINTS, 77851Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_13' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_13, MD_CONSTRAINTS, 78051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_14' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_14, MD_CONSTRAINTS, 78251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_15' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_15, MD_CONSTRAINTS, 78451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_16' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_16, MD_CONSTRAINTS, 78751Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_17' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_17, MD_CONSTRAINTS, 79051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_18' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_18, MD_CONSTRAINTS, 79451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_19' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_19, MD_CONSTRAINTS, 79651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_20' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_20, MD_CONSTRAINTS, 80051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_21' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_21, MD_CONSTRAINTS, 80251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_22' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_22, MD_CONSTRAINTS, 80551Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_23' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_23, MD_CONSTRAINTS, 80751Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'classroomid' Changed to 'CLASSROOMID_23' (Invalid characters, reserved word or clash)</message>
+  <param>CLASSROOMID_23, MD_CONSTRAINTS, 82151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint ' examenrolldb_ibfk_1' Changed to 'examenrolldb_ibfk_1' (Invalid characters, reserved word or clash)</message>
+  <param>examenrolldb_ibfk_1, MD_CONSTRAINTS, 85651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'userid' Changed to 'USERID_23' (Invalid characters, reserved word or clash)</message>
+  <param>USERID_23, MD_CONSTRAINTS, 87251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:20:27</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'fk_attendance_classStudentSubjectID' Changed to 'fk_attendance_classStudentSubj' (Invalid characters, reserved word or clash)</message>
+  <param>fk_attendance_classStudentSubj, MD_CONSTRAINTS, 92151Convert</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:20:28</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+  <message>Convert completed in 0 seconds</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>

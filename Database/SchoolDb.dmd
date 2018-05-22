@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SchoolDb" id="D473E292-DE2F-4D6F-73D6-151A21FF1050" version="3.5">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:22:54 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D473E292-DE2F-4D6F-73D6-151A21FF1050</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5815E7AA-1865-7111-A9CB-0AD39C3DF389">
+<designStoragePath>D:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="CD144DCC-28C3-59BC-EBB0-3687B4C8BECE">
+<designStoragePath>D:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

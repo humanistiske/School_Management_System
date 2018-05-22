@@ -1,0 +1,1 @@
+select * from logindb where userid = 1

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DFD42E89-CC23-B590-5716-3F4894169E07" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="STUDENTSUBJECTREPORT">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>STUDENTSUBJECTREPORT</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUBJECT_REPORT" id="EACC7C25-91DC-7B19-646C-1CD07FCBFB67">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDENTSUBJECTREPORT</sourceObjSchema>
+<sourceObjName>SUBJECT_REPORT</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBJECT_REPORT_DESC" id="44C70D17-C86A-D89A-13A9-D8D19FF432B6">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDENTSUBJECTREPORT</sourceObjSchema>
+<sourceObjName>SUBJECT_REPORT_DESC</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E8710AE-27D6-CF81-D64B-C02216F2062D" name="PRIMARY_18">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_18</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EACC7C25-91DC-7B19-646C-1CD07FCBFB67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="437BE7FB-3498-9BB8-0136-FEDF4F75CA2B" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_18">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_18</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EACC7C25-91DC-7B19-646C-1CD07FCBFB67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

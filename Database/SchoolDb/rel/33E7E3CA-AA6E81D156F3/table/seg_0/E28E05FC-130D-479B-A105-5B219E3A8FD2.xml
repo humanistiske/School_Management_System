@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E28E05FC-130D-479B-A105-5B219E3A8FD2" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="CLASS">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>CLASS</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLASSID" id="75AA6EFB-9135-9318-2472-A3D8E2A8851F">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASS</sourceObjSchema>
+<sourceObjName>CLASSID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASS_CAPACITY" id="EEE11B7A-0E59-09D5-3859-5A77C93FC317">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASS</sourceObjSchema>
+<sourceObjName>CLASS_CAPACITY</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASS_SIZE" id="161A936F-C0EF-589F-0D5A-A111DF004616">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASS</sourceObjSchema>
+<sourceObjName>CLASS_SIZE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASSROOMID" id="C7AE4BFA-F59D-81B7-E255-045E6E8A6F88">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASS</sourceObjSchema>
+<sourceObjName>CLASSROOMID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70BA8E90-9B8C-79B2-BD94-0707E7E8C37B" referredColumn="C0870CEB-AB86-518D-85B2-E1290731C004"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96449A88-6B42-DD28-4322-7ABE1C638AA5" name="PRIMARY">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75AA6EFB-9135-9318-2472-A3D8E2A8851F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A61AC9C-48F2-84B8-1318-7A8EB4225179" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75AA6EFB-9135-9318-2472-A3D8E2A8851F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F327A8B-9B58-3E77-43B1-1D35258F7586" name="CLASS_IBFK_1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7AE4BFA-F59D-81B7-E255-045E6E8A6F88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

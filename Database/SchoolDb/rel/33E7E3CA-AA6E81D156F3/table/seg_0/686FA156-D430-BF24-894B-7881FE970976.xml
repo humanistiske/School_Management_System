@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="686FA156-D430-BF24-894B-7881FE970976" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="TEACHERSUBJECTDIST">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>TEACHERSUBJECTDIST</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="4D73A159-D4DA-A3BE-C64C-058C47C92F3A">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>TEACHERSUBJECTDIST</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E01092A-9AFE-6884-F7AA-7D91F62064DC" referredColumn="4258E255-9E2A-9A5C-A196-CA946F8297E0"/>
+</associations>
+</Column>
+<Column name="CLASSID" id="9BBAA77C-D6D3-57B6-DE6B-5B505381817A">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>TEACHERSUBJECTDIST</sourceObjSchema>
+<sourceObjName>CLASSID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7919D179-B8A4-170C-5D13-6D92FCCCB080" referredColumn="8B553B0D-3AA2-4DF6-7DDE-901337FC0A02"/>
+</associations>
+</Column>
+<Column name="SUBJECTID" id="98005F68-6CF3-12CF-AF7C-15E67FBEA847">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>TEACHERSUBJECTDIST</sourceObjSchema>
+<sourceObjName>SUBJECTID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7919D179-B8A4-170C-5D13-6D92FCCCB080" referredColumn="1E8B4D87-F4DA-D3E5-F5B6-F196C70E3E38"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE69E0B9-0B61-AD14-8D14-399D07FB9556" name="PRIMARY_21">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_21</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BBAA77C-D6D3-57B6-DE6B-5B505381817A"/>
+<colUsage columnID="98005F68-6CF3-12CF-AF7C-15E67FBEA847"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BD6952A-985E-833E-3E4E-47EC8E54C442" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_21">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_21</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BBAA77C-D6D3-57B6-DE6B-5B505381817A"/>
+<colUsage columnID="98005F68-6CF3-12CF-AF7C-15E67FBEA847"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9061ED7F-FAB7-E0EB-4F82-D38828E18D00" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="TEACHERSUBJECTDIST_IBFK_2">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>TEACHERSUBJECTDIST_IBFK_2</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98005F68-6CF3-12CF-AF7C-15E67FBEA847"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68B18095-18ED-B686-8E2E-3DC9BB196334" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="TEACHERSUBJECTDIST_IBFK_3">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>TEACHERSUBJECTDIST_IBFK_3</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D73A159-D4DA-A3BE-C64C-058C47C92F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FC9EFE5-238B-67E1-7753-65EE3840A224" name="FK_TEACHERCLASSSUBJECTID">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BBAA77C-D6D3-57B6-DE6B-5B505381817A"/>
+<colUsage columnID="98005F68-6CF3-12CF-AF7C-15E67FBEA847"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAC7275F-DF41-8D98-7A97-21D65066ABAE" name="TEACHERSUBJECTDIST_IBFK_3">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D73A159-D4DA-A3BE-C64C-058C47C92F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

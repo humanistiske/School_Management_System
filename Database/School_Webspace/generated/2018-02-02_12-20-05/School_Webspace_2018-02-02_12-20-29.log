@@ -1,0 +1,1552 @@
+SQL> SET VERIFY ON
+SQL> SET FEEDBACK OFF
+SQL> SET DEFINE ON
+SQL> CLEAR SCREEN
+SQL> set serveroutput on
+SQL> 
+SQL> COLUMN date_time NEW_VAL filename noprint;
+SQL> SELECT to_char(systimestamp,'yyyy-mm-dd_hh24-mi-ssxff') date_time FROM DUAL;
+
+
+
+SQL> spool "School_Webspace_&filename..log"
+SQL> 
+SQL> -- Password file execution
+SQL> -- @passworddefinition.sql
+SQL> 
+SQL> PROMPT Dropping Role ROLE_School_Webspace ...
+Dropping Role ROLE_School_Webspace ...
+SQL> DROP ROLE ROLE_School_Webspace ;
+SQL> PROMPT Creating Role ROLE_School_Webspace ...
+Creating Role ROLE_School_Webspace ...
+SQL> CREATE ROLE ROLE_School_Webspace ;
+SQL> 
+SQL> -- PROMPT Drop school_webspace user
+SQL> -- drop user school_webspace cascade;
+SQL> 
+SQL> PROMPT Create user school_webspace
+Create user school_webspace
+SQL> CREATE USER school_webspace identified by &&school_webspace_password DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP;
+old:CREATE USER school_webspace identified by &&school_webspace_password DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP
+new:CREATE USER school_webspace identified by school_webspace DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP
+SQL> GRANT CREATE SESSION, RESOURCE, CREATE VIEW, CREATE MATERIALIZED VIEW, CREATE SYNONYM TO school_webspace;
+SQL> 
+SQL> -- PROMPT Drop Emulation user
+SQL> -- drop user Emulation cascade;
+SQL> 
+SQL> PROMPT Create user Emulation
+Create user Emulation
+SQL> CREATE USER Emulation identified by &&Emulation_password DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP;
+old:CREATE USER Emulation identified by &&Emulation_password DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP
+new:CREATE USER Emulation identified by Emulation DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP
+SQL> GRANT CREATE SESSION, RESOURCE, CREATE VIEW, CREATE MATERIALIZED VIEW, CREATE SYNONYM TO Emulation;
+SQL> 
+SQL> set define on
+SQL> prompt connecting to Emulation
+connecting to Emulation
+SQL> connect Emulation/&&Emulation_password;
+SQL> set define off
+SQL> 
+SQL> set define on
+SQL> prompt connecting to school_webspace
+connecting to school_webspace
+SQL> connect school_webspace/&&school_webspace_password;
+SQL> set define off
+SQL> 
+SQL> -- DROP SEQUENCE class_classroomid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence class_classroomid_SEQ ...
+Creating Sequence class_classroomid_SEQ ...
+SQL> CREATE SEQUENCE  class_classroomid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE classroom_classroomid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence classroom_classroomid_SEQ ...
+Creating Sequence classroom_classroomid_SEQ ...
+SQL> CREATE SEQUENCE  classroom_classroomid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE exam_examid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence exam_examid_SEQ ...
+Creating Sequence exam_examid_SEQ ...
+SQL> CREATE SEQUENCE  exam_examid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE examstatus_exam_status_id_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence examstatus_exam_status_id_SEQ ...
+Creating Sequence examstatus_exam_status_id_SEQ ...
+SQL> CREATE SEQUENCE  examstatus_exam_status_id_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE newseventsdb_newseventid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence newseventsdb_newseventid_SEQ ...
+Creating Sequence newseventsdb_newseventid_SEQ ...
+SQL> CREATE SEQUENCE  newseventsdb_newseventid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE salarystatus_salarystatusid_SE;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence salarystatus_salarystatusid_SE ...
+Creating Sequence salarystatus_salarystatusid_SE ...
+SQL> CREATE SEQUENCE  salarystatus_salarystatusid_SE  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE studentsubjectreport_subject_r;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence studentsubjectreport_subject_r ...
+Creating Sequence studentsubjectreport_subject_r ...
+SQL> CREATE SEQUENCE  studentsubjectreport_subject_r  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE subject_subjectid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence subject_subjectid_SEQ ...
+Creating Sequence subject_subjectid_SEQ ...
+SQL> CREATE SEQUENCE  subject_subjectid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP SEQUENCE userdb_userid_SEQ;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Sequence userdb_userid_SEQ ...
+Creating Sequence userdb_userid_SEQ ...
+SQL> CREATE SEQUENCE  userdb_userid_SEQ  
+  2    MINVALUE 1 MAXVALUE 999999999999999999999999 INCREMENT BY 1  NOCYCLE ;
+SQL> 
+SQL> -- DROP TABLE class CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table class ...
+Creating Table class ...
+SQL> CREATE TABLE class (
+  2    classid VARCHAR2(3 CHAR) NOT NULL,
+  3    class_capacity NUMBER(10,0) NOT NULL,
+  4    class_size NUMBER(10,0) NOT NULL,
+  5    classroomid NUMBER(10,0) NOT NULL
+  6  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY on table class ... 
+Creating Primary Key Constraint PRIMARY on table class ...
+SQL> ALTER TABLE class
+  2  ADD CONSTRAINT PRIMARY PRIMARY KEY
+  3  (
+  4    classid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON class TO ROLE_School_Webspace;
+SQL> -- DROP TABLE classattendancedb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table classattendancedb ...
+Creating Table classattendancedb ...
+SQL> CREATE TABLE classattendancedb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    classid VARCHAR2(3 CHAR) NOT NULL,
+  4    subjectid NUMBER(10,0) NOT NULL,
+  5    date_ DATE NOT NULL,
+  6    attendance_status VARCHAR2(10 CHAR) NOT NULL
+  7  );
+SQL> 
+SQL> 
+SQL> COMMENT ON COLUMN classattendancedb.date_ IS 'ORIGINAL NAME:date'
+  2  ;
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_23 on table classattendancedb ... 
+Creating Primary Key Constraint PRIMARY_23 on table classattendancedb ...
+SQL> ALTER TABLE classattendancedb
+  2  ADD CONSTRAINT PRIMARY_23 PRIMARY KEY
+  3  (
+  4    classid,
+  5    subjectid,
+  6    userid,
+  7    date_
+  8  )
+  9  ENABLE
+ 10  ;
+SQL> 
+SQL> GRANT ALL ON classattendancedb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE classroom CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table classroom ...
+Creating Table classroom ...
+SQL> CREATE TABLE classroom (
+  2    classroomid NUMBER(10,0) NOT NULL,
+  3    capacity NUMBER(10,0) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_2 on table classroom ... 
+Creating Primary Key Constraint PRIMARY_2 on table classroom ...
+SQL> ALTER TABLE classroom
+  2  ADD CONSTRAINT PRIMARY_2 PRIMARY KEY
+  3  (
+  4    classroomid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON classroom TO ROLE_School_Webspace;
+SQL> -- DROP TABLE classsubjectdist CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table classsubjectdist ...
+Creating Table classsubjectdist ...
+SQL> CREATE TABLE classsubjectdist (
+  2    classid VARCHAR2(3 CHAR) NOT NULL,
+  3    subjectid NUMBER(10,0) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_3 on table classsubjectdist ... 
+Creating Primary Key Constraint PRIMARY_3 on table classsubjectdist ...
+SQL> ALTER TABLE classsubjectdist
+  2  ADD CONSTRAINT PRIMARY_3 PRIMARY KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON classsubjectdist TO ROLE_School_Webspace;
+SQL> -- DROP TABLE classtimetable CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table classtimetable ...
+Creating Table classtimetable ...
+SQL> CREATE TABLE classtimetable (
+  2    classid VARCHAR2(3 CHAR) NOT NULL,
+  3    subjectid NUMBER(10,0) NOT NULL,
+  4    start_time INTERVAL DAY TO SECOND NOT NULL,
+  5    end_time INTERVAL DAY TO SECOND NOT NULL
+  6  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_4 on table classtimetable ... 
+Creating Primary Key Constraint PRIMARY_4 on table classtimetable ...
+SQL> ALTER TABLE classtimetable
+  2  ADD CONSTRAINT PRIMARY_4 PRIMARY KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON classtimetable TO ROLE_School_Webspace;
+SQL> -- DROP TABLE exam CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table exam ...
+Creating Table exam ...
+SQL> CREATE TABLE exam (
+  2    examid NUMBER(10,0) NOT NULL,
+  3    classid VARCHAR2(3 CHAR) NOT NULL,
+  4    subjectid NUMBER(10,0) NOT NULL,
+  5    exam_location NUMBER(10,0) NOT NULL,
+  6    date_time DATE NOT NULL,
+  7    duration FLOAT NOT NULL,
+  8    marks NUMBER(10,0) NOT NULL,
+  9    exam_status_id NUMBER(10,0) NOT NULL
+ 10  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_5 on table exam ... 
+Creating Primary Key Constraint PRIMARY_5 on table exam ...
+SQL> ALTER TABLE exam
+  2  ADD CONSTRAINT PRIMARY_5 PRIMARY KEY
+  3  (
+  4    examid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON exam TO ROLE_School_Webspace;
+SQL> -- DROP TABLE examenrolldb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table examenrolldb ...
+Creating Table examenrolldb ...
+SQL> CREATE TABLE examenrolldb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    examid NUMBER(10,0) NOT NULL,
+  4    exam_status_id NUMBER(10,0) NOT NULL
+  5  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_6 on table examenrolldb ... 
+Creating Primary Key Constraint PRIMARY_6 on table examenrolldb ...
+SQL> ALTER TABLE examenrolldb
+  2  ADD CONSTRAINT PRIMARY_6 PRIMARY KEY
+  3  (
+  4    examid,
+  5    userid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON examenrolldb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE examhallticketdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table examhallticketdb ...
+Creating Table examhallticketdb ...
+SQL> CREATE TABLE examhallticketdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    examid NUMBER(10,0) NOT NULL,
+  4    exam_hallticket BLOB NOT NULL
+  5  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_7 on table examhallticketdb ... 
+Creating Primary Key Constraint PRIMARY_7 on table examhallticketdb ...
+SQL> ALTER TABLE examhallticketdb
+  2  ADD CONSTRAINT PRIMARY_7 PRIMARY KEY
+  3  (
+  4    examid,
+  5    userid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON examhallticketdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE examresultdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table examresultdb ...
+Creating Table examresultdb ...
+SQL> CREATE TABLE examresultdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    examid NUMBER(10,0) NOT NULL,
+  4    student_marks NUMBER(10,0) NOT NULL,
+  5    grade VARCHAR2(1 CHAR) NOT NULL,
+  6    answer_sheet BLOB NOT NULL
+  7  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_8 on table examresultdb ... 
+Creating Primary Key Constraint PRIMARY_8 on table examresultdb ...
+SQL> ALTER TABLE examresultdb
+  2  ADD CONSTRAINT PRIMARY_8 PRIMARY KEY
+  3  (
+  4    examid,
+  5    userid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON examresultdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE examstatus CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table examstatus ...
+Creating Table examstatus ...
+SQL> CREATE TABLE examstatus (
+  2    exam_status_id NUMBER(10,0) NOT NULL,
+  3    exam_status_desc VARCHAR2(45 CHAR) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_9 on table examstatus ... 
+Creating Primary Key Constraint PRIMARY_9 on table examstatus ...
+SQL> ALTER TABLE examstatus
+  2  ADD CONSTRAINT PRIMARY_9 PRIMARY KEY
+  3  (
+  4    exam_status_id
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON examstatus TO ROLE_School_Webspace;
+SQL> -- DROP TABLE logindb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table logindb ...
+Creating Table logindb ...
+SQL> CREATE TABLE logindb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    usertypeid VARCHAR2(3 CHAR) NOT NULL,
+  4    password VARCHAR2(20 CHAR) NOT NULL
+  5  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_10 on table logindb ... 
+Creating Primary Key Constraint PRIMARY_10 on table logindb ...
+SQL> ALTER TABLE logindb
+  2  ADD CONSTRAINT PRIMARY_10 PRIMARY KEY
+  3  (
+  4    userid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON logindb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE newseventsdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table newseventsdb ...
+Creating Table newseventsdb ...
+SQL> CREATE TABLE newseventsdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    newseventid NUMBER(10,0) NOT NULL,
+  4    title VARCHAR2(130 CHAR) NOT NULL,
+  5    post BLOB NOT NULL
+  6  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_11 on table newseventsdb ... 
+Creating Primary Key Constraint PRIMARY_11 on table newseventsdb ...
+SQL> ALTER TABLE newseventsdb
+  2  ADD CONSTRAINT PRIMARY_11 PRIMARY KEY
+  3  (
+  4    newseventid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON newseventsdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE salarystatus CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table salarystatus ...
+Creating Table salarystatus ...
+SQL> CREATE TABLE salarystatus (
+  2    salarystatusid NUMBER(10,0) NOT NULL,
+  3    salary_status_desc VARCHAR2(20 CHAR) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_12 on table salarystatus ... 
+Creating Primary Key Constraint PRIMARY_12 on table salarystatus ...
+SQL> ALTER TABLE salarystatus
+  2  ADD CONSTRAINT PRIMARY_12 PRIMARY KEY
+  3  (
+  4    salarystatusid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON salarystatus TO ROLE_School_Webspace;
+SQL> -- DROP TABLE staffaccountsdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table staffaccountsdb ...
+Creating Table staffaccountsdb ...
+SQL> CREATE TABLE staffaccountsdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    in_hand_salary NUMBER(10,0) NOT NULL,
+  4    allowance NUMBER(10,0) NOT NULL,
+  5    total_salary NUMBER(10,0) NOT NULL,
+  6    last_salary_payment_date DATE NOT NULL,
+  7    salarystatusid NUMBER(10,0) NOT NULL,
+  8    date_of_joining DATE NOT NULL,
+  9    contract_end_date DATE NOT NULL
+ 10  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_13 on table staffaccountsdb ... 
+Creating Primary Key Constraint PRIMARY_13 on table staffaccountsdb ...
+SQL> ALTER TABLE staffaccountsdb
+  2  ADD CONSTRAINT PRIMARY_13 PRIMARY KEY
+  3  (
+  4    userid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON staffaccountsdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE staffinfodb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table staffinfodb ...
+Creating Table staffinfodb ...
+SQL> CREATE TABLE staffinfodb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    usertypeid VARCHAR2(3 CHAR) NOT NULL,
+  4    designation VARCHAR2(45 CHAR) NOT NULL,
+  5    highest_qualification VARCHAR2(45 CHAR) NOT NULL,
+  6    qualification_documents BLOB NOT NULL
+  7  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_14 on table staffinfodb ... 
+Creating Primary Key Constraint PRIMARY_14 on table staffinfodb ...
+SQL> ALTER TABLE staffinfodb
+  2  ADD CONSTRAINT PRIMARY_14 PRIMARY KEY
+  3  (
+  4    userid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON staffinfodb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE studentaccountsdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table studentaccountsdb ...
+Creating Table studentaccountsdb ...
+SQL> CREATE TABLE studentaccountsdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    classid VARCHAR2(3 CHAR) NOT NULL,
+  4    paid_fees NUMBER(10,0) NOT NULL,
+  5    outstanding_fees NUMBER(10,0) NOT NULL,
+  6    last_payment_date DATE NOT NULL,
+  7    due_date DATE
+  8  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_15 on table studentaccountsdb ... 
+Creating Primary Key Constraint PRIMARY_15 on table studentaccountsdb ...
+SQL> ALTER TABLE studentaccountsdb
+  2  ADD CONSTRAINT PRIMARY_15 PRIMARY KEY
+  3  (
+  4    classid,
+  5    userid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON studentaccountsdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE studentinfodb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table studentinfodb ...
+Creating Table studentinfodb ...
+SQL> CREATE TABLE studentinfodb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    classid VARCHAR2(3 CHAR) NOT NULL,
+  4    total_subjects NUMBER(10,0) NOT NULL
+  5  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_16 on table studentinfodb ... 
+Creating Primary Key Constraint PRIMARY_16 on table studentinfodb ...
+SQL> ALTER TABLE studentinfodb
+  2  ADD CONSTRAINT PRIMARY_16 PRIMARY KEY
+  3  (
+  4    classid,
+  5    userid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON studentinfodb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE studentsubjectdist CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table studentsubjectdist ...
+Creating Table studentsubjectdist ...
+SQL> CREATE TABLE studentsubjectdist (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    subjectid NUMBER(10,0) NOT NULL,
+  4    classid VARCHAR2(3 CHAR) NOT NULL,
+  5    subject_report NUMBER(10,0) NOT NULL
+  6  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_17 on table studentsubjectdist ... 
+Creating Primary Key Constraint PRIMARY_17 on table studentsubjectdist ...
+SQL> ALTER TABLE studentsubjectdist
+  2  ADD CONSTRAINT PRIMARY_17 PRIMARY KEY
+  3  (
+  4    classid,
+  5    subjectid,
+  6    userid
+  7  )
+  8  ENABLE
+  9  ;
+SQL> 
+SQL> GRANT ALL ON studentsubjectdist TO ROLE_School_Webspace;
+SQL> -- DROP TABLE studentsubjectreport CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table studentsubjectreport ...
+Creating Table studentsubjectreport ...
+SQL> CREATE TABLE studentsubjectreport (
+  2    subject_report NUMBER(10,0) NOT NULL,
+  3    subject_report_desc VARCHAR2(20 CHAR) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_18 on table studentsubjectreport ... 
+Creating Primary Key Constraint PRIMARY_18 on table studentsubjectreport ...
+SQL> ALTER TABLE studentsubjectreport
+  2  ADD CONSTRAINT PRIMARY_18 PRIMARY KEY
+  3  (
+  4    subject_report
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON studentsubjectreport TO ROLE_School_Webspace;
+SQL> -- DROP TABLE studymaterial CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table studymaterial ...
+Creating Table studymaterial ...
+SQL> CREATE TABLE studymaterial (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    filename VARCHAR2(100 CHAR) NOT NULL,
+  4    file_ BLOB NOT NULL,
+  5    size_ FLOAT NOT NULL,
+  6    upload_date_time DATE NOT NULL,
+  7    total_downloads NUMBER(10,0) NOT NULL
+  8  );
+SQL> 
+SQL> 
+SQL> COMMENT ON COLUMN studymaterial.file_ IS 'ORIGINAL NAME:file'
+  2  ;
+SQL> 
+SQL> COMMENT ON COLUMN studymaterial.size_ IS 'ORIGINAL NAME:size'
+  2  ;
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_19 on table studymaterial ... 
+Creating Primary Key Constraint PRIMARY_19 on table studymaterial ...
+SQL> ALTER TABLE studymaterial
+  2  ADD CONSTRAINT PRIMARY_19 PRIMARY KEY
+  3  (
+  4    userid,
+  5    filename,
+  6    upload_date_time
+  7  )
+  8  ENABLE
+  9  ;
+SQL> 
+SQL> GRANT ALL ON studymaterial TO ROLE_School_Webspace;
+SQL> -- DROP TABLE subject CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table subject ...
+Creating Table subject ...
+SQL> CREATE TABLE subject (
+  2    subjectid NUMBER(10,0) NOT NULL,
+  3    subject_name VARCHAR2(50 CHAR) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_20 on table subject ... 
+Creating Primary Key Constraint PRIMARY_20 on table subject ...
+SQL> ALTER TABLE subject
+  2  ADD CONSTRAINT PRIMARY_20 PRIMARY KEY
+  3  (
+  4    subjectid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON subject TO ROLE_School_Webspace;
+SQL> -- DROP TABLE teachersubjectdist CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table teachersubjectdist ...
+Creating Table teachersubjectdist ...
+SQL> CREATE TABLE teachersubjectdist (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    classid VARCHAR2(3 CHAR) NOT NULL,
+  4    subjectid NUMBER(10,0) NOT NULL
+  5  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_21 on table teachersubjectdist ... 
+Creating Primary Key Constraint PRIMARY_21 on table teachersubjectdist ...
+SQL> ALTER TABLE teachersubjectdist
+  2  ADD CONSTRAINT PRIMARY_21 PRIMARY KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  ENABLE
+  8  ;
+SQL> 
+SQL> GRANT ALL ON teachersubjectdist TO ROLE_School_Webspace;
+SQL> -- DROP TABLE userdb CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table userdb ...
+Creating Table userdb ...
+SQL> CREATE TABLE userdb (
+  2    userid NUMBER(10,0) NOT NULL,
+  3    fname VARCHAR2(45 CHAR) NOT NULL,
+  4    lname VARCHAR2(45 CHAR) NOT NULL,
+  5    address VARCHAR2(140 CHAR) NOT NULL,
+  6    phone NUMBER(10,0) NOT NULL,
+  7    alt_phone NUMBER(10,0) NOT NULL,
+  8    email_id VARCHAR2(45 CHAR) NOT NULL,
+  9    photo BLOB NOT NULL,
+ 10    id_proof BLOB NOT NULL
+ 11  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_22 on table userdb ... 
+Creating Primary Key Constraint PRIMARY_22 on table userdb ...
+SQL> ALTER TABLE userdb
+  2  ADD CONSTRAINT PRIMARY_22 PRIMARY KEY
+  3  (
+  4    userid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON userdb TO ROLE_School_Webspace;
+SQL> -- DROP TABLE usertype CASCADE CONSTRAINTS;
+SQL> 
+SQL> 
+SQL> PROMPT Creating Table usertype ...
+Creating Table usertype ...
+SQL> CREATE TABLE usertype (
+  2    usertypeid VARCHAR2(3 CHAR) NOT NULL,
+  3    usertype_name VARCHAR2(50 CHAR) NOT NULL
+  4  );
+SQL> 
+SQL> 
+SQL> PROMPT Creating Primary Key Constraint PRIMARY_1 on table usertype ... 
+Creating Primary Key Constraint PRIMARY_1 on table usertype ...
+SQL> ALTER TABLE usertype
+  2  ADD CONSTRAINT PRIMARY_1 PRIMARY KEY
+  3  (
+  4    usertypeid
+  5  )
+  6  ENABLE
+  7  ;
+SQL> 
+SQL> GRANT ALL ON usertype TO ROLE_School_Webspace;
+SQL> PROMPT Creating Index classattendancedb_ibfk_3 on classattendancedb ...
+Creating Index classattendancedb_ibfk_3 on classattendancedb ...
+SQL> CREATE INDEX classattendancedb_ibfk_3 ON classattendancedb
+  2  (
+  3    subjectid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index fk_attendance_classStudentSubj on classattendancedb ...
+Creating Index fk_attendance_classStudentSubj on classattendancedb ...
+SQL> CREATE INDEX fk_attendance_classStudentSubj ON classattendancedb
+  2  (
+  3    userid,
+  4    classid,
+  5    subjectid
+  6  ) 
+  7  ;
+SQL> PROMPT Creating Index classsubjectdist_ibfk_1 on classsubjectdist ...
+Creating Index classsubjectdist_ibfk_1 on classsubjectdist ...
+SQL> CREATE INDEX classsubjectdist_ibfk_1 ON classsubjectdist
+  2  (
+  3    subjectid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index exam_ibfk_2 on exam ...
+Creating Index exam_ibfk_2 on exam ...
+SQL> CREATE INDEX exam_ibfk_2 ON exam
+  2  (
+  3    subjectid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index exam_ibfk_3 on exam ...
+Creating Index exam_ibfk_3 on exam ...
+SQL> CREATE INDEX exam_ibfk_3 ON exam
+  2  (
+  3    exam_location
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index fk_examResultClassSubjectID on exam ...
+Creating Index fk_examResultClassSubjectID on exam ...
+SQL> CREATE INDEX fk_examResultClassSubjectID ON exam
+  2  (
+  3    classid,
+  4    subjectid
+  5  ) 
+  6  ;
+SQL> PROMPT Creating Index exam_ibfk_4 on exam ...
+Creating Index exam_ibfk_4 on exam ...
+SQL> CREATE INDEX exam_ibfk_4 ON exam
+  2  (
+  3    exam_status_id
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index examenrolldb_ibfk_1 on examenrolldb ...
+Creating Index examenrolldb_ibfk_1 on examenrolldb ...
+SQL> CREATE INDEX examenrolldb_ibfk_1 ON examenrolldb
+  2  (
+  3    userid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index examenrolldb_ibfk_3 on examenrolldb ...
+Creating Index examenrolldb_ibfk_3 on examenrolldb ...
+SQL> CREATE INDEX examenrolldb_ibfk_3 ON examenrolldb
+  2  (
+  3    exam_status_id
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index logindb_ibfk_2 on logindb ...
+Creating Index logindb_ibfk_2 on logindb ...
+SQL> CREATE INDEX logindb_ibfk_2 ON logindb
+  2  (
+  3    usertypeid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index newseventsdb_ibfk_1 on newseventsdb ...
+Creating Index newseventsdb_ibfk_1 on newseventsdb ...
+SQL> CREATE INDEX newseventsdb_ibfk_1 ON newseventsdb
+  2  (
+  3    userid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index staffaccountsdb_ibfk_2 on staffaccountsdb ...
+Creating Index staffaccountsdb_ibfk_2 on staffaccountsdb ...
+SQL> CREATE INDEX staffaccountsdb_ibfk_2 ON staffaccountsdb
+  2  (
+  3    salarystatusid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index staffinfodb_ibfk_2 on staffinfodb ...
+Creating Index staffinfodb_ibfk_2 on staffinfodb ...
+SQL> CREATE INDEX staffinfodb_ibfk_2 ON staffinfodb
+  2  (
+  3    usertypeid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index studentinfodb_ibfk_1 on studentinfodb ...
+Creating Index studentinfodb_ibfk_1 on studentinfodb ...
+SQL> CREATE INDEX studentinfodb_ibfk_1 ON studentinfodb
+  2  (
+  3    userid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index studentinfodb_ibfk_2 on studentinfodb ...
+Creating Index studentinfodb_ibfk_2 on studentinfodb ...
+SQL> CREATE INDEX studentinfodb_ibfk_2 ON studentinfodb
+  2  (
+  3    classid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index studentsubjectdist_ibfk_3 on studentsubjectdist ...
+Creating Index studentsubjectdist_ibfk_3 on studentsubjectdist ...
+SQL> CREATE INDEX studentsubjectdist_ibfk_3 ON studentsubjectdist
+  2  (
+  3    subject_report
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index studentsubjectdist_ibfk_1 on studentsubjectdist ...
+Creating Index studentsubjectdist_ibfk_1 on studentsubjectdist ...
+SQL> CREATE INDEX studentsubjectdist_ibfk_1 ON studentsubjectdist
+  2  (
+  3    userid,
+  4    classid
+  5  ) 
+  6  ;
+SQL> PROMPT Creating Index studentsubjectdist_ibfk_2 on studentsubjectdist ...
+Creating Index studentsubjectdist_ibfk_2 on studentsubjectdist ...
+SQL> CREATE INDEX studentsubjectdist_ibfk_2 ON studentsubjectdist
+  2  (
+  3    subjectid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index teachersubjectdist_ibfk_2 on teachersubjectdist ...
+Creating Index teachersubjectdist_ibfk_2 on teachersubjectdist ...
+SQL> CREATE INDEX teachersubjectdist_ibfk_2 ON teachersubjectdist
+  2  (
+  3    subjectid
+  4  ) 
+  5  ;
+SQL> PROMPT Creating Index fk_teacherClassSubjectID on teachersubjectdist ...
+Creating Index fk_teacherClassSubjectID on teachersubjectdist ...
+SQL> CREATE INDEX fk_teacherClassSubjectID ON teachersubjectdist
+  2  (
+  3    classid,
+  4    subjectid
+  5  ) 
+  6  ;
+SQL> PROMPT Creating Index teachersubjectdist_ibfk_3 on teachersubjectdist ...
+Creating Index teachersubjectdist_ibfk_3 on teachersubjectdist ...
+SQL> CREATE INDEX teachersubjectdist_ibfk_3 ON teachersubjectdist
+  2  (
+  3    userid
+  4  ) 
+  5  ;
+SQL> set define on
+SQL> prompt connecting to school_webspace
+connecting to school_webspace
+SQL> connect school_webspace/&&school_webspace_password;
+SQL> set define off
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint class_ibfk_1 on table classroom...
+Creating Foreign Key Constraint class_ibfk_1 on table classroom...
+SQL> ALTER TABLE class
+  2  ADD CONSTRAINT class_ibfk_1 FOREIGN KEY
+  3  (
+  4    classroomid
+  5  )
+  6  REFERENCES classroom
+  7  (
+  8    classroomid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint classsubjectdist_ibfk_1 on table subject...
+Creating Foreign Key Constraint classsubjectdist_ibfk_1 on table subject...
+SQL> ALTER TABLE classsubjectdist
+  2  ADD CONSTRAINT classsubjectdist_ibfk_1 FOREIGN KEY
+  3  (
+  4    subjectid
+  5  )
+  6  REFERENCES subject
+  7  (
+  8    subjectid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint classsubjectdist_ibfk_2 on table class...
+Creating Foreign Key Constraint classsubjectdist_ibfk_2 on table class...
+SQL> ALTER TABLE classsubjectdist
+  2  ADD CONSTRAINT classsubjectdist_ibfk_2 FOREIGN KEY
+  3  (
+  4    classid
+  5  )
+  6  REFERENCES class
+  7  (
+  8    classid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint classtimetable_ibfk_1 on table classsubjectdist...
+Creating Foreign Key Constraint classtimetable_ibfk_1 on table classsubjectdist...
+SQL> ALTER TABLE classtimetable
+  2  ADD CONSTRAINT classtimetable_ibfk_1 FOREIGN KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  REFERENCES classsubjectdist
+  8  (
+  9    classid,
+ 10    subjectid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint exam_ibfk_3 on table classroom...
+Creating Foreign Key Constraint exam_ibfk_3 on table classroom...
+SQL> ALTER TABLE exam
+  2  ADD CONSTRAINT exam_ibfk_3 FOREIGN KEY
+  3  (
+  4    exam_location
+  5  )
+  6  REFERENCES classroom
+  7  (
+  8    classroomid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint exam_ibfk_4 on table examstatus...
+Creating Foreign Key Constraint exam_ibfk_4 on table examstatus...
+SQL> ALTER TABLE exam
+  2  ADD CONSTRAINT exam_ibfk_4 FOREIGN KEY
+  3  (
+  4    exam_status_id
+  5  )
+  6  REFERENCES examstatus
+  7  (
+  8    exam_status_id
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint fk_examClassSubjectID on table classsubjectdist...
+Creating Foreign Key Constraint fk_examClassSubjectID on table classsubjectdist...
+SQL> ALTER TABLE exam
+  2  ADD CONSTRAINT fk_examClassSubjectID FOREIGN KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  REFERENCES classsubjectdist
+  8  (
+  9    classid,
+ 10    subjectid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint examenrolldb_ibfk_2 on table exam...
+Creating Foreign Key Constraint examenrolldb_ibfk_2 on table exam...
+SQL> ALTER TABLE examenrolldb
+  2  ADD CONSTRAINT examenrolldb_ibfk_2 FOREIGN KEY
+  3  (
+  4    examid
+  5  )
+  6  REFERENCES exam
+  7  (
+  8    examid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint examenrolldb_ibfk_3 on table examstatus...
+Creating Foreign Key Constraint examenrolldb_ibfk_3 on table examstatus...
+SQL> ALTER TABLE examenrolldb
+  2  ADD CONSTRAINT examenrolldb_ibfk_3 FOREIGN KEY
+  3  (
+  4    exam_status_id
+  5  )
+  6  REFERENCES examstatus
+  7  (
+  8    exam_status_id
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint examhallticketdb_ibfk_1 on table examenrolldb...
+Creating Foreign Key Constraint examhallticketdb_ibfk_1 on table examenrolldb...
+SQL> ALTER TABLE examhallticketdb
+  2  ADD CONSTRAINT examhallticketdb_ibfk_1 FOREIGN KEY
+  3  (
+  4    examid,
+  5    userid
+  6  )
+  7  REFERENCES examenrolldb
+  8  (
+  9    examid,
+ 10    userid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint examenrolldb_ibfk_1 on table examenrolldb...
+Creating Foreign Key Constraint examenrolldb_ibfk_1 on table examenrolldb...
+SQL> ALTER TABLE examresultdb
+  2  ADD CONSTRAINT examenrolldb_ibfk_1 FOREIGN KEY
+  3  (
+  4    examid,
+  5    userid
+  6  )
+  7  REFERENCES examenrolldb
+  8  (
+  9    examid,
+ 10    userid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint logindb_ibfk_1 on table userdb...
+Creating Foreign Key Constraint logindb_ibfk_1 on table userdb...
+SQL> ALTER TABLE logindb
+  2  ADD CONSTRAINT logindb_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES userdb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint logindb_ibfk_2 on table usertype...
+Creating Foreign Key Constraint logindb_ibfk_2 on table usertype...
+SQL> ALTER TABLE logindb
+  2  ADD CONSTRAINT logindb_ibfk_2 FOREIGN KEY
+  3  (
+  4    usertypeid
+  5  )
+  6  REFERENCES usertype
+  7  (
+  8    usertypeid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint newseventsdb_ibfk_1 on table staffinfodb...
+Creating Foreign Key Constraint newseventsdb_ibfk_1 on table staffinfodb...
+SQL> ALTER TABLE newseventsdb
+  2  ADD CONSTRAINT newseventsdb_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES staffinfodb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint staffaccountsdb_ibfk_1 on table staffinfodb...
+Creating Foreign Key Constraint staffaccountsdb_ibfk_1 on table staffinfodb...
+SQL> ALTER TABLE staffaccountsdb
+  2  ADD CONSTRAINT staffaccountsdb_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES staffinfodb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint staffaccountsdb_ibfk_2 on table salarystatus...
+Creating Foreign Key Constraint staffaccountsdb_ibfk_2 on table salarystatus...
+SQL> ALTER TABLE staffaccountsdb
+  2  ADD CONSTRAINT staffaccountsdb_ibfk_2 FOREIGN KEY
+  3  (
+  4    salarystatusid
+  5  )
+  6  REFERENCES salarystatus
+  7  (
+  8    salarystatusid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint staffinfodb_ibfk_1 on table userdb...
+Creating Foreign Key Constraint staffinfodb_ibfk_1 on table userdb...
+SQL> ALTER TABLE staffinfodb
+  2  ADD CONSTRAINT staffinfodb_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES userdb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint staffinfodb_ibfk_2 on table usertype...
+Creating Foreign Key Constraint staffinfodb_ibfk_2 on table usertype...
+SQL> ALTER TABLE staffinfodb
+  2  ADD CONSTRAINT staffinfodb_ibfk_2 FOREIGN KEY
+  3  (
+  4    usertypeid
+  5  )
+  6  REFERENCES usertype
+  7  (
+  8    usertypeid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentaccountsdb_ibfk_1 on table studentinfodb...
+Creating Foreign Key Constraint studentaccountsdb_ibfk_1 on table studentinfodb...
+SQL> ALTER TABLE studentaccountsdb
+  2  ADD CONSTRAINT studentaccountsdb_ibfk_1 FOREIGN KEY
+  3  (
+  4    classid,
+  5    userid
+  6  )
+  7  REFERENCES studentinfodb
+  8  (
+  9    classid,
+ 10    userid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentinfodb_ibfk_1 on table userdb...
+Creating Foreign Key Constraint studentinfodb_ibfk_1 on table userdb...
+SQL> ALTER TABLE studentinfodb
+  2  ADD CONSTRAINT studentinfodb_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES userdb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentinfodb_ibfk_2 on table class...
+Creating Foreign Key Constraint studentinfodb_ibfk_2 on table class...
+SQL> ALTER TABLE studentinfodb
+  2  ADD CONSTRAINT studentinfodb_ibfk_2 FOREIGN KEY
+  3  (
+  4    classid
+  5  )
+  6  REFERENCES class
+  7  (
+  8    classid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentsubjectdist_ibfk_1 on table studentinfodb...
+Creating Foreign Key Constraint studentsubjectdist_ibfk_1 on table studentinfodb...
+SQL> ALTER TABLE studentsubjectdist
+  2  ADD CONSTRAINT studentsubjectdist_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid,
+  5    classid
+  6  )
+  7  REFERENCES studentinfodb
+  8  (
+  9    userid,
+ 10    classid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentsubjectdist_ibfk_2 on table subject...
+Creating Foreign Key Constraint studentsubjectdist_ibfk_2 on table subject...
+SQL> ALTER TABLE studentsubjectdist
+  2  ADD CONSTRAINT studentsubjectdist_ibfk_2 FOREIGN KEY
+  3  (
+  4    subjectid
+  5  )
+  6  REFERENCES subject
+  7  (
+  8    subjectid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studentsubjectdist_ibfk_3 on table studentsubjectreport...
+Creating Foreign Key Constraint studentsubjectdist_ibfk_3 on table studentsubjectreport...
+SQL> ALTER TABLE studentsubjectdist
+  2  ADD CONSTRAINT studentsubjectdist_ibfk_3 FOREIGN KEY
+  3  (
+  4    subject_report
+  5  )
+  6  REFERENCES studentsubjectreport
+  7  (
+  8    subject_report
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint studymaterial_ibfk_1 on table userdb...
+Creating Foreign Key Constraint studymaterial_ibfk_1 on table userdb...
+SQL> ALTER TABLE studymaterial
+  2  ADD CONSTRAINT studymaterial_ibfk_1 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES userdb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint fk_teacherClassSubjectID on table classsubjectdist...
+Creating Foreign Key Constraint fk_teacherClassSubjectID on table classsubjectdist...
+SQL> ALTER TABLE teachersubjectdist
+  2  ADD CONSTRAINT fk_teacherClassSubjectID FOREIGN KEY
+  3  (
+  4    classid,
+  5    subjectid
+  6  )
+  7  REFERENCES classsubjectdist
+  8  (
+  9    classid,
+ 10    subjectid
+ 11  )
+ 12  ENABLE
+ 13  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint teachersubjectdist_ibfk_3 on table staffinfodb...
+Creating Foreign Key Constraint teachersubjectdist_ibfk_3 on table staffinfodb...
+SQL> ALTER TABLE teachersubjectdist
+  2  ADD CONSTRAINT teachersubjectdist_ibfk_3 FOREIGN KEY
+  3  (
+  4    userid
+  5  )
+  6  REFERENCES staffinfodb
+  7  (
+  8    userid
+  9  )
+ 10  ENABLE
+ 11  ;
+SQL> 
+SQL> PROMPT Creating Foreign Key Constraint fk_attendance_classStudentSubj on table studentsubjectdist...
+Creating Foreign Key Constraint fk_attendance_classStudentSubj on table studentsubjectdist...
+SQL> ALTER TABLE classattendancedb
+  2  ADD CONSTRAINT fk_attendance_classStudentSubj FOREIGN KEY
+  3  (
+  4    userid,
+  5    classid,
+  6    subjectid
+  7  )
+  8  REFERENCES studentsubjectdist
+  9  (
+ 10    userid,
+ 11    classid,
+ 12    subjectid
+ 13  )
+ 14  ENABLE
+ 15  ;
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER class_classroomid_TRG BEFORE INSERT ON class
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.classroomid IS NULL THEN
+  8      SELECT  class_classroomid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(classroomid),0) INTO v_newVal FROM class;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT class_classroomid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.classroomid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER classroom_classroomid_TRG BEFORE INSERT ON classroom
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.classroomid IS NULL THEN
+  8      SELECT  classroom_classroomid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(classroomid),0) INTO v_newVal FROM classroom;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT classroom_classroomid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.classroomid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER exam_examid_TRG BEFORE INSERT ON exam
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.examid IS NULL THEN
+  8      SELECT  exam_examid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(examid),0) INTO v_newVal FROM exam;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT exam_examid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.examid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER examstatus_exam_status_id_TRG BEFORE INSERT ON examstatus
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.exam_status_id IS NULL THEN
+  8      SELECT  examstatus_exam_status_id_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(exam_status_id),0) INTO v_newVal FROM examstatus;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT examstatus_exam_status_id_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.exam_status_id := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER newseventsdb_newseventid_TRG BEFORE INSERT ON newseventsdb
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.newseventid IS NULL THEN
+  8      SELECT  newseventsdb_newseventid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(newseventid),0) INTO v_newVal FROM newseventsdb;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT newseventsdb_newseventid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.newseventid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER salarystatus_salarystatusid_TR BEFORE INSERT ON salarystatus
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.salarystatusid IS NULL THEN
+  8      SELECT  salarystatus_salarystatusid_SE.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(salarystatusid),0) INTO v_newVal FROM salarystatus;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT salarystatus_salarystatusid_SE.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.salarystatusid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER STUDENTSUBJECTREPORT_SUBJECT_1 BEFORE INSERT ON studentsubjectreport
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.subject_report IS NULL THEN
+  8      SELECT  studentsubjectreport_subject_r.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(subject_report),0) INTO v_newVal FROM studentsubjectreport;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT studentsubjectreport_subject_r.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.subject_report := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER subject_subjectid_TRG BEFORE INSERT ON subject
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.subjectid IS NULL THEN
+  8      SELECT  subject_subjectid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(subjectid),0) INTO v_newVal FROM subject;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT subject_subjectid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.subjectid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER userdb_userid_TRG BEFORE INSERT ON userdb
+  2  FOR EACH ROW
+  3  DECLARE 
+  4  v_newVal NUMBER(12) := 0;
+  5  v_incval NUMBER(12) := 0;
+  6  BEGIN
+  7    IF INSERTING AND :new.userid IS NULL THEN
+  8      SELECT  userdb_userid_SEQ.NEXTVAL INTO v_newVal FROM DUAL;
+  9      -- If this is the first time this table have been inserted into (sequence == 1)
+ 10      IF v_newVal = 1 THEN 
+ 11        --get the max indentity value from the table
+ 12        SELECT NVL(max(userid),0) INTO v_newVal FROM userdb;
+ 13        v_newVal := v_newVal + 1;
+ 14        --set the sequence to that value
+ 15        LOOP
+ 16             EXIT WHEN v_incval>=v_newVal;
+ 17             SELECT userdb_userid_SEQ.nextval INTO v_incval FROM dual;
+ 18        END LOOP;
+ 19      END IF;
+ 20      --used to emulate LAST_INSERT_ID()
+ 21      --mysql_utilities.identity := v_newVal; 
+ 22     -- assign the value from the sequence to emulate the identity column
+ 23     :new.userid := v_newVal;
+ 24    END IF;
+ 25  END;
+ 26  
+ 27  /
+SQL> 
+SQL> spool off;
+SQL> 
+SQL> COMMIT;
+Connection created by CONNECT script command disconnected

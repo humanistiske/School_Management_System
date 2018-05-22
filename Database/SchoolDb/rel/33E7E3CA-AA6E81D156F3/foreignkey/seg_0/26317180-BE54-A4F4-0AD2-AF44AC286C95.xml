@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26317180-BE54-A4F4-0AD2-AF44AC286C95" containerWithKeyObject="0674263D-4A8D-E16B-2245-DD6FABBF94AA" localFKIndex="939FC368-51A8-7F23-FCDA-520E4392AAB5" name="EXAM_IBFK_4">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>EXAM_IBFK_4</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<referredTableLongName>SCHOOL_WEBSPACE.EXAMSTATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>47BF3880-9528-0F4D-ECE4-C708A453EFA0</referredTableID>
+<keyObject>FFE91C85-E546-6FBC-8220-59469B43FF60</keyObject>
+<referredKeyID>FFE91C85-E546-6FBC-8220-59469B43FF60</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EXAM_STATUS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

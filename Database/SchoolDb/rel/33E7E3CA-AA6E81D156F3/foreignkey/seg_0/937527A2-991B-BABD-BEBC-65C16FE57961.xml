@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="937527A2-991B-BABD-BEBC-65C16FE57961" containerWithKeyObject="0B1A721B-D9C0-37EC-4934-5CADCD1EF030" localFKIndex="1DD45CDF-48AE-8949-8D53-2D7B83537BD4" name="STAFFACCOUNTSDB_IBFK_2">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>STAFFACCOUNTSDB_IBFK_2</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<referredTableLongName>SCHOOL_WEBSPACE.SALARYSTATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6D260EBA-63BA-6376-4BF5-B9A08931314D</referredTableID>
+<keyObject>C0155431-7C40-A2F3-52C6-FD0F9B6BD7CE</keyObject>
+<referredKeyID>C0155431-7C40-A2F3-52C6-FD0F9B6BD7CE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SALARYSTATUSID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STAFFACCOUNTSDB" directorySegmentName="seg_0" id="0B1A721B-D9C0-37EC-4934-5CADCD1EF030">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>577C3286-F14C-6647-E452-1A646374E2C8</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CONTRACT_END_DATE" id="29666EC5-06D8-A79E-4698-FCDF9B95C30A">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARYSTATUSID" id="2C8D9966-2159-6659-352C-096D75C64AB7">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALLOWANCE" id="351590E9-570F-8D37-3E28-E66BF65CE7DA">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL_SALARY" id="45D81BDB-1229-01AD-42A3-161CFC2726A0">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_OF_JOINING" id="48F54871-8DAB-EBB6-E6E7-85AF3399C9B9">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IN_HAND_SALARY" id="4E1CAB2A-267C-A8F4-D7C3-A7F543CAC9D6">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_SALARY_PAYMENT_DATE" id="D21B165B-2EC3-2669-343A-E95C4D344459">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="DAB663A1-61BD-9D08-8312-BB0DD3435D13">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STAFFACCOUNTSDB_IBFK_2" id="F4480CE9-6B88-89AD-6C81-A8B99B1F0B6E">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRIMARY_13" id="F70EB279-D52D-7CAB-5DBC-C47FB0E96E7F">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STAFFACCOUNTSDB_IBFK_2" id="1DD45CDF-48AE-8949-8D53-2D7B83537BD4">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STAFFACCOUNTSDB_IBFK_1" id="263FC2D5-10B1-0CBE-8F9E-69E9BDF3CAAA">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIMARY_13" id="E0FF74BD-95EA-18B3-3204-D31BBC8BB7BD">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<existingIndex>F70EB279-D52D-7CAB-5DBC-C47FB0E96E7F</existingIndex>
+<indexSegment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

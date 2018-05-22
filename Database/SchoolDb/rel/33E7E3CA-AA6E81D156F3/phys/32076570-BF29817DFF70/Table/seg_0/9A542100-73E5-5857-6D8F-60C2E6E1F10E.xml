@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CLASSTIMETABLE" directorySegmentName="seg_0" id="9A542100-73E5-5857-6D8F-60C2E6E1F10E">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>577C3286-F14C-6647-E452-1A646374E2C8</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CLASSID" id="1E6B37C4-83B3-5772-D5BB-E8986DA16F32">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_TIME" id="2A66458E-A2D0-C64E-0128-F249015821EC">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_TIME" id="2CF45AFF-EFE9-814F-95DE-4E57DB68EA61">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBJECTID" id="BC50A9CC-6BEE-0FFD-E4C3-BA38FF45F20E">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRIMARY_4" id="B74FC7E4-0A23-D3A1-287A-FFB3E888A62E">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CLASSTIMETABLE_IBFK_1" id="875F1FC4-B5DD-30CA-5DA3-5AFDB8C683C2">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIMARY_4" id="50F19EBB-C3AE-9EF5-90B6-1E8B34A89F61">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<segment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</segment>
+<tableSpace>5B4D5224-79E5-EC63-3BE9-9AD6AD3CCBB0</tableSpace>
+<existingIndex>B74FC7E4-0A23-D3A1-287A-FFB3E888A62E</existingIndex>
+<indexSegment>4AAA5FF6-CECC-4756-3F3A-6CB95BBF47B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

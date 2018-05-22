@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="286F73A2-7DE4-3D6E-0498-27E0BC8BB3F2" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="EXAMHALLTICKETDB">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>EXAMHALLTICKETDB</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="A0B4FDE1-EC2C-5E23-9C43-8E9AFA0E6B2C">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMHALLTICKETDB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0D04BD5-34F1-6ECF-085A-66CCCCCBE2C4" referredColumn="0CDEFD29-FD61-6480-94E8-094E392F2A60"/>
+</associations>
+</Column>
+<Column name="EXAMID" id="75583F80-86DF-A5E7-983C-D3E8EB859937">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMHALLTICKETDB</sourceObjSchema>
+<sourceObjName>EXAMID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0D04BD5-34F1-6ECF-085A-66CCCCCBE2C4" referredColumn="BD1FBAA0-0ECA-682D-AED1-EE6A30CCC5D7"/>
+</associations>
+</Column>
+<Column name="EXAM_HALLTICKET" id="EBAA8A88-7107-1A5C-3815-0E7B42813653">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMHALLTICKETDB</sourceObjSchema>
+<sourceObjName>EXAM_HALLTICKET</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A936954C-C83E-A129-CB43-8E6F40A4BE56" name="PRIMARY_7">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_7</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75583F80-86DF-A5E7-983C-D3E8EB859937"/>
+<colUsage columnID="A0B4FDE1-EC2C-5E23-9C43-8E9AFA0E6B2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="914653F7-443B-1989-FA49-43A5598A7A6E" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_7">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_7</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75583F80-86DF-A5E7-983C-D3E8EB859937"/>
+<colUsage columnID="A0B4FDE1-EC2C-5E23-9C43-8E9AFA0E6B2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="558C0915-7030-DDA1-2271-C646B84E9714" name="EXAMHALLTICKETDB_IBFK_1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75583F80-86DF-A5E7-983C-D3E8EB859937"/>
+<colUsage columnID="A0B4FDE1-EC2C-5E23-9C43-8E9AFA0E6B2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

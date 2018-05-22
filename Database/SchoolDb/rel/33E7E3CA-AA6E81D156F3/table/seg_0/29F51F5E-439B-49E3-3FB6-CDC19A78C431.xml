@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29F51F5E-439B-49E3-3FB6-CDC19A78C431" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="NEWSEVENTSDB">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>NEWSEVENTSDB</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="AE3098E3-6D69-16D6-7CAC-E0F95BA47318">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>NEWSEVENTSDB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB673859-9203-E5F2-A959-35762EFF455B" referredColumn="4258E255-9E2A-9A5C-A196-CA946F8297E0"/>
+</associations>
+</Column>
+<Column name="NEWSEVENTID" id="DCA34E1A-0A44-753E-8C93-1FC235D506FE">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>NEWSEVENTSDB</sourceObjSchema>
+<sourceObjName>NEWSEVENTID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="394AF9C3-6E3E-E186-7DB8-6B1312AB4843">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>NEWSEVENTSDB</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>130 CHAR</dataTypeSize>
+<ownDataTypeParameters>130 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POST" id="4F9D6251-D0A4-7E41-E095-F3DBE81911F2">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>NEWSEVENTSDB</sourceObjSchema>
+<sourceObjName>POST</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="630AE3AD-B56F-8CAB-6FCB-B326647209AA" name="PRIMARY_11">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_11</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA34E1A-0A44-753E-8C93-1FC235D506FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A84A6599-113D-2516-4FD3-1AC11D2A19C4" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="NEWSEVENTSDB_IBFK_1">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>NEWSEVENTSDB_IBFK_1</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE3098E3-6D69-16D6-7CAC-E0F95BA47318"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7837030-6FF4-B04A-CCDB-D43CAF615596" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_11">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_11</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA34E1A-0A44-753E-8C93-1FC235D506FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B04AC5F8-1C84-D920-6E19-0CCD6DF7D2DF" name="NEWSEVENTSDB_IBFK_1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE3098E3-6D69-16D6-7CAC-E0F95BA47318"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E09E817D-757C-59E5-FBE1-55A3BE57BA93" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="STUDYMATERIAL">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>STUDYMATERIAL</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="486FE02F-AEC4-AFA5-EA6C-5A3DFBC44854">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52F8554B-2DEE-56AF-3F8E-6DF4E42062AD" referredColumn="99DD6B1F-07A1-9071-D320-C903CF74E680"/>
+</associations>
+</Column>
+<Column name="FILENAME" id="C8C7B174-26EC-6EE6-DEB5-AD1B7B366344">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>FILENAME</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILE_" id="0922905A-1096-A385-E88C-F22626CE0749">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>FILE_</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<commentInRDBMS>ORIGINAL NAME:file</commentInRDBMS>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_" id="CF263DE3-F6FA-1928-81A3-0F46F8A1C8C5">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>SIZE_</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<commentInRDBMS>ORIGINAL NAME:size</commentInRDBMS>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPLOAD_DATE_TIME" id="2492E32B-2400-16F1-0D7F-461B86E7FFF3">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>UPLOAD_DATE_TIME</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL_DOWNLOADS" id="8329FEE2-E398-98E3-CD5B-1D68A82676D2">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STUDYMATERIAL</sourceObjSchema>
+<sourceObjName>TOTAL_DOWNLOADS</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E06CF517-5F43-FCEE-0038-CCCDBF26944B" name="PRIMARY_19">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_19</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486FE02F-AEC4-AFA5-EA6C-5A3DFBC44854"/>
+<colUsage columnID="C8C7B174-26EC-6EE6-DEB5-AD1B7B366344"/>
+<colUsage columnID="2492E32B-2400-16F1-0D7F-461B86E7FFF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="160B9CA6-59D7-3421-E503-C2B1A54658E4" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_19">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_19</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486FE02F-AEC4-AFA5-EA6C-5A3DFBC44854"/>
+<colUsage columnID="C8C7B174-26EC-6EE6-DEB5-AD1B7B366344"/>
+<colUsage columnID="2492E32B-2400-16F1-0D7F-461B86E7FFF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B6B19AC-9589-6A6F-EDF1-C8967D8968DA" name="STUDYMATERIAL_IBFK_1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486FE02F-AEC4-AFA5-EA6C-5A3DFBC44854"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

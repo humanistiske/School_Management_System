@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<log>
+<record>
+  <date>2018-02-02T12:41:25</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+  <message>Error ocurred during capture: ORA-01400: cannot insert NULL into ("DEMOMIGRATIONREPO"."MD_PROJECTS"."ID")
+</message>
+  <key>Capture.EXCEPTION</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>ORA-01400: cannot insert NULL into ("DEMOMIGRATIONREPO"."MD_PROJECTS"."ID")
+</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@1a489290</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:41:25</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>SEVERE</level>
+  <class>oracle.dbtools.migration.workbench.core.logging.MigrationLogUtil</class>
+  <message>Capture
+Classic Capture
+ORA-01400: cannot insert NULL into ("DEMOMIGRATIONREPO"."MD_PROJECTS"."ID")
+</message>
+  <param>oracle.dbtools.metadata.persistence.PersistableObject.doInsert(PersistableObject.java:248)</param>
+  <param>oracle.dbtools.metadata.persistence.PersistableObject.save(PersistableObject.java:182)</param>
+  <param>oracle.dbtools.migration.workbench.core.BasicMigrationStorer.storeObject(BasicMigrationStorer.java:51)</param>
+  <param>oracle.dbtools.migration.capture.CaptureWorker.storeConnection(CaptureWorker.java:652)</param>
+  <param>oracle.dbtools.migration.capture.CaptureWorker.runCapture(CaptureWorker.java:253)</param>
+  <param>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask.doOnlineClassicCapture(FullMigrateTask.java:826)</param>
+  <param>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask.doCapture(FullMigrateTask.java:609)</param>
+  <param>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask.doMaskBasedActions(FullMigrateTask.java:406)</param>
+  <param>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask.doWork(FullMigrateTask.java:320)</param>
+  <param>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask.doWork(FullMigrateTask.java:153)</param>
+  <param>oracle.dbtools.raptor.backgroundTask.RaptorTask.call(RaptorTask.java:193)</param>
+  <param>java.util.concurrent.FutureTask.run(FutureTask.java:266)</param>
+  <param>oracle.dbtools.raptor.backgroundTask.RaptorTaskManager$RaptorFutureTask.run(RaptorTaskManager.java:629)</param>
+  <param>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</param>
+  <param>java.util.concurrent.FutureTask.run(FutureTask.java:266)</param>
+  <param>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)</param>
+  <param>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)</param>
+  <param>java.lang.Thread.run(Thread.java:745)</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@42cac431</param>
+  <exception>
+    <message>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask$FullMigrateTaskException: Capture
+Classic Capture
+ORA-01400: cannot insert NULL into ("DEMOMIGRATIONREPO"."MD_PROJECTS"."ID")
+</message>
+    <frame>
+      <class>oracle.dbtools.metadata.persistence.PersistableObject</class>
+      <line>248</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.metadata.persistence.PersistableObject</class>
+      <line>182</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.BasicMigrationStorer</class>
+      <line>51</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.capture.CaptureWorker</class>
+      <line>652</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.capture.CaptureWorker</class>
+      <line>253</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+      <line>826</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+      <line>609</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+      <line>406</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+      <line>153</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.raptor.backgroundTask.RaptorTask</class>
+      <line>193</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.FutureTask</class>
+      <line>266</line>
+    </frame>
+    <frame>
+      <class>oracle.dbtools.raptor.backgroundTask.RaptorTaskManager$RaptorFutureTask</class>
+      <line>629</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.Executors$RunnableAdapter</class>
+      <line>511</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.FutureTask</class>
+      <line>266</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <line>1142</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <line>617</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <line>745</line>
+    </frame>
+  </exception>
+
+</record>
+<record>
+  <date>2018-02-02T12:41:25</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+  <message>Capturing PROJECT School_Webspace_2: FAILED : Database Migration : FAILED</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@1c4812ea</param>
+
+</record>

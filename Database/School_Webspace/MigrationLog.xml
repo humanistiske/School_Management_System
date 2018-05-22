@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<log>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConverterWorker</class>
+  <message>Catalog MySQL, Schema school_webspace coalesced to single schema school_webspace</message>
+  <key>Convert.COALESCED</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>MySQL</param>
+  <param>school_webspace</param>
+  <param>school_webspace</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classid' on table 'class' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classid</param>
+  <param>class</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4174c0d6</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classroomid' on table 'class' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classroomid</param>
+  <param>class</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@3a2365b6</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'usertypeid' on table 'usertype' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>usertypeid</param>
+  <param>usertype</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@3d4b9a3b</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'classroomid' on table 'classroom' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>classroomid</param>
+  <param>classroom</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@73dda9b0</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'userid' on table 'logindb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>userid</param>
+  <param>logindb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@1448b56d</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'userid' on table 'staffaccountsdb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>userid</param>
+  <param>staffaccountsdb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@35e76c87</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.convert.ConvertUtils</class>
+  <message>Index 'id' on table 'userdb' has been dropped as it is a duplicate of a constraint</message>
+  <key>Convert.DROPPEDCONSTRAINTINDEX</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>id</param>
+  <param>userdb</param>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@541ca242</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Following objects have had name changes applied</message>
+  <key>Convert.IDENTIFIER_TRANSFORMED_HEADING</key>
+  <catalog>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</catalog>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@5590c75d</param>
+
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'date' Changed to 'date_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Index 'fk_attendance_classStudentSubjectID' Changed to 'fk_attendance_classStudentSubj' (Invalid characters, reserved word or clash)</message>
+  <param>fk_attendance_classStudentSubj, MD_INDEXES, 154601Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'file' Changed to 'file_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Column 'size' Changed to 'size_' (Invalid characters, reserved word or clash)</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_1' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_1, MD_CONSTRAINTS, 174151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_2' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_2, MD_CONSTRAINTS, 174351Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_3' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_3, MD_CONSTRAINTS, 174551Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_4' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_4, MD_CONSTRAINTS, 174851Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_5' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_5, MD_CONSTRAINTS, 175151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_6' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_6, MD_CONSTRAINTS, 175351Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_7' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_7, MD_CONSTRAINTS, 175651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_8' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_8, MD_CONSTRAINTS, 175951Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_9' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_9, MD_CONSTRAINTS, 176251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_10' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_10, MD_CONSTRAINTS, 176451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_11' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_11, MD_CONSTRAINTS, 176651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_12' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_12, MD_CONSTRAINTS, 176851Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_13' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_13, MD_CONSTRAINTS, 177051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_14' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_14, MD_CONSTRAINTS, 177251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_15' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_15, MD_CONSTRAINTS, 177451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_16' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_16, MD_CONSTRAINTS, 177751Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_17' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_17, MD_CONSTRAINTS, 178051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_18' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_18, MD_CONSTRAINTS, 178451Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_19' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_19, MD_CONSTRAINTS, 178651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_20' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_20, MD_CONSTRAINTS, 179051Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_21' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_21, MD_CONSTRAINTS, 179251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_22' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_22, MD_CONSTRAINTS, 179551Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'PRIMARY' Changed to 'PRIMARY_23' (Invalid characters, reserved word or clash)</message>
+  <param>PRIMARY_23, MD_CONSTRAINTS, 179751Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'classroomid' Changed to 'CLASSROOMID_23' (Invalid characters, reserved word or clash)</message>
+  <param>CLASSROOMID_23, MD_CONSTRAINTS, 181151Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint ' examenrolldb_ibfk_1' Changed to 'examenrolldb_ibfk_1' (Invalid characters, reserved word or clash)</message>
+  <param>examenrolldb_ibfk_1, MD_CONSTRAINTS, 184651Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'userid' Changed to 'USERID_23' (Invalid characters, reserved word or clash)</message>
+  <param>USERID_23, MD_CONSTRAINTS, 186251Convert</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:33</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.core.util.MultiLevelLogManager</class>
+  <message>Constraint 'fk_attendance_classStudentSubjectID' Changed to 'fk_attendance_classStudentSubj' (Invalid characters, reserved word or clash)</message>
+  <param>fk_attendance_classStudentSubj, MD_CONSTRAINTS, 191151Convert</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:25:34</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.workbench.core.ui.FullMigrateTask</class>
+  <message>Convert completed in 0 seconds</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@4928ee6c</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.class: Data Move information:Rows : 1 Errors: 0</message>
+  <param>class, MD_TABLES, 152551DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.usertype: Data Move information:Rows : 5 Errors: 0</message>
+  <param>usertype, MD_TABLES, 173401DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.classroom: Data Move information:Rows : 1 Errors: 0</message>
+  <param>classroom, MD_TABLES, 155051DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.classsubjectdist: Data Move information:Rows : 2 Errors: 0</message>
+  <param>classsubjectdist, MD_TABLES, 155801DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.classtimetable: Data Move information:Rows : 0 Errors: 0</message>
+  <param>classtimetable, MD_TABLES, 156351DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.exam</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@5b6df94e</param>
+
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Source column date_time is not null, but returned null value.  Defaulting to 1970-01-01</message>
+  <param>exam, MD_TABLES, 156851DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Data Move information:Rows : 1 Errors: 0</message>
+  <param>exam, MD_TABLES, 156851DataMove</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.examenrolldb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>examenrolldb, MD_TABLES, 159051DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.examhallticketdb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>examhallticketdb, MD_TABLES, 159951DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.examresultdb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>examresultdb, MD_TABLES, 160351DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.studentinfodb: Data Move information:Rows : 2 Errors: 0</message>
+  <param>studentinfodb, MD_TABLES, 166751DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.subject: Data Move information:Rows : 2 Errors: 0</message>
+  <param>subject, MD_TABLES, 170201DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.examstatus: Data Move information:Rows : 5 Errors: 0</message>
+  <param>examstatus, MD_TABLES, 160951DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.logindb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>logindb, MD_TABLES, 161451DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.newseventsdb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>newseventsdb, MD_TABLES, 162351DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.salarystatus: Data Move information:Rows : 0 Errors: 0</message>
+  <param>salarystatus, MD_TABLES, 163301DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.staffaccountsdb: Data Move information:Rows : 0 Errors: 0</message>
+  <param>staffaccountsdb, MD_TABLES, 163801DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.staffinfodb</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@67eac656</param>
+
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Inserting ' ' into column school_webspace.staffinfodb.qualification_documents (Row number 1)</message>
+  <param>staffinfodb, MD_TABLES, 165201DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Data Move information:Rows : 1 Errors: 0</message>
+  <param>staffinfodb, MD_TABLES, 165201DataMove</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.studentaccountsdb</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@5828a56</param>
+
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Source column last_payment_date is not null, but returned null value.  Defaulting to 1970-01-01</message>
+  <param>studentaccountsdb, MD_TABLES, 166051DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Data Move information:Rows : 2 Errors: 0</message>
+  <param>studentaccountsdb, MD_TABLES, 166051DataMove</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.studentsubjectdist: Data Move information:Rows : 3 Errors: 0</message>
+  <param>studentsubjectdist, MD_TABLES, 167651DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.studentsubjectreport: Data Move information:Rows : 4 Errors: 0</message>
+  <param>studentsubjectreport, MD_TABLES, 169001DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.studymaterial: Data Move information:Rows : 0 Errors: 0</message>
+  <param>studymaterial, MD_TABLES, 169501DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.teachersubjectdist: Data Move information:Rows : 2 Errors: 0</message>
+  <param>teachersubjectdist, MD_TABLES, 170701DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.userdb</message>
+  <param>oracle.dbtools.migration.workbench.core.logging.LogInfo@1db6f485</param>
+
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>WARNING</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Inserting ' ' into column school_webspace.userdb.id_proof (Row number 1)</message>
+  <param>userdb, MD_TABLES, 171951DataMove</param>
+
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>Data Move information:Rows : 3 Errors: 0</message>
+  <param>userdb, MD_TABLES, 171951DataMove</param>
+
+</record>
+</record>
+<record>
+  <date>2018-02-02T12:25:40</date>
+  <logger>oracle.dbtools.migration.workbench.core.MigrationLogResourceBundle</logger>
+  <level>INFO</level>
+  <class>oracle.dbtools.migration.datamove.online.DataMoveDrone</class>
+  <message>school_webspace.classattendancedb: Data Move information:Rows : 4 Errors: 0</message>
+  <param>classattendancedb, MD_TABLES, 153751DataMove</param>
+
+</record>

@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="ROLE_SCHOOL_WEBSPACE" directorySegmentName="seg_0" id="FE656E2E-B04D-4A35-5348-831AA62112FF">
+<sourceConnName>SchoolDb</sourceConnName>
+<sourceObjName>ROLE_SCHOOL_WEBSPACE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:41:47 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="2B4EEFF2-96B6-1D28-A77B-664E04AAF4C2">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>E28E05FC-130D-479B-A105-5B219E3A8FD2</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions11" id="32345816-9BCB-33E3-AD1D-0B843371ECA7">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>0674263D-4A8D-E16B-2245-DD6FABBF94AA</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions13" id="8C2F5AB6-C7DA-7FF5-C341-1A4AF0778152">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>CC3BC78D-6650-CDE1-7C54-4D422E670EE7</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions15" id="94A5EC02-A01A-4B88-CECD-1484FBB7B4C6">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>286F73A2-7DE4-3D6E-0498-27E0BC8BB3F2</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions17" id="7137C001-E8F4-BC09-1F59-7A5B110D7085">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>37CE336A-6B6E-F083-1CFC-2B71FBF4AA4A</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions19" id="FE4C15FF-307A-121F-ACA9-E8F39FC81907">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>47BF3880-9528-0F4D-ECE4-C708A453EFA0</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions21" id="9376C3D4-8AC9-2DDA-F3E2-DBADE5027A67">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>DDBE3A35-B6E0-AD22-9174-40FD9FF995D2</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions23" id="19A6B65E-4E36-5744-63A4-64F048B073B4">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>29F51F5E-439B-49E3-3FB6-CDC19A78C431</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions25" id="F8A75CE5-EEC5-9F8A-FD97-7A525530A431">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>6D260EBA-63BA-6376-4BF5-B9A08931314D</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions27" id="6946E109-87D4-D34E-ABD9-3EE04DE87203">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>0B1A721B-D9C0-37EC-4934-5CADCD1EF030</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions29" id="90477C2A-CE8D-2056-A565-7E67FC2F73B5">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>783701F7-F91E-91F1-313A-C020AAE4FDE6</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions3" id="27173F21-652E-625A-2780-AD57D2ACF92A">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>D34D342A-6954-881A-A14A-BDE7A816E673</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions31" id="392AEF81-A671-AE4F-47CA-43599C5E80A8">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>F498A3C5-9999-80EE-7CA5-A7EDD9CC5EA4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions33" id="9975338D-A707-5DE5-12DA-ECD01A960D4B">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>C4451672-179D-3CA6-D2C1-DAEB3E18ED52</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions35" id="E0EF3CDD-00FA-A06E-E3A9-28290D362647">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>A04D2198-E103-B31A-64F7-4A83579482BD</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions37" id="2B5B18EC-D67D-8339-11D2-B1DC3A23C24C">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>DFD42E89-CC23-B590-5716-3F4894169E07</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions39" id="EA58871B-0C42-41F2-0FF3-B783D809D7A1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>E09E817D-757C-59E5-FBE1-55A3BE57BA93</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions41" id="E768E5CF-2CF5-D2FE-4632-DF1FA227CD02">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>97A2578A-F9AA-CDB3-90AB-57A42E901988</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions43" id="E45229A4-1FB6-4CC9-FF4E-8224D6AE129C">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>686FA156-D430-BF24-894B-7881FE970976</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions45" id="290042BD-FB0F-F3DF-A392-F93973507915">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>643F6402-5B3D-4F60-1072-B2AB854E263D</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions47" id="F8AC40CF-400C-E60A-A114-4CA58A55FD75">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>D489B871-AF3B-74F6-F087-1D4B91B9759B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions5" id="A4BA6F17-0D74-2CED-BBD5-E0C3725BE040">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>D5657A1C-18C1-D1F8-180B-1139482108F1</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions7" id="39047695-7375-6629-651E-5E3AFE4436B5">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>10279A11-2A94-C011-1947-54AE162373A8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions9" id="CEB4FF7F-8492-66E8-6A17-F2081C757261">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 09:42:25 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<privileges>ALTER, DELETE, INSERT, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>9A542100-73E5-5857-6D8F-60C2E6E1F10E</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

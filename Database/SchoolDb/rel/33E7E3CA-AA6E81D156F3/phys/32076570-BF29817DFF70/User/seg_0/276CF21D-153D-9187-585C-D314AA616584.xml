@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="SCHOOL_WEBSPACE" directorySegmentName="seg_0" id="276CF21D-153D-9187-585C-D314AA616584">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjName>SCHOOL_WEBSPACE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<schemaObject>AC4F5944-3376-0A55-A713-1C0680F4734C</schemaObject>
+</UserOraclev10g>

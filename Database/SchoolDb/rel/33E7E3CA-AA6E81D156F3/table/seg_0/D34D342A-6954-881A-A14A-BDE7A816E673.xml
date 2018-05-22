@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D34D342A-6954-881A-A14A-BDE7A816E673" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="CLASSATTENDANCEDB">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>CLASSATTENDANCEDB</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="CEDDD910-EF92-7495-ED05-C6BE0EDD973A">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASSATTENDANCEDB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73E7F955-B183-36E3-6B73-12DAB5DBCDF8" referredColumn="BE0F525E-FE0C-B45B-DEB7-11C695DAE2FB"/>
+</associations>
+</Column>
+<Column name="CLASSID" id="8D1A8948-5936-B4D4-4699-35816629DC88">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASSATTENDANCEDB</sourceObjSchema>
+<sourceObjName>CLASSID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73E7F955-B183-36E3-6B73-12DAB5DBCDF8" referredColumn="59EC58DD-67D4-A11E-C0CB-C68CF6AC55E0"/>
+</associations>
+</Column>
+<Column name="SUBJECTID" id="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASSATTENDANCEDB</sourceObjSchema>
+<sourceObjName>SUBJECTID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73E7F955-B183-36E3-6B73-12DAB5DBCDF8" referredColumn="9B6F799F-5779-6088-4011-A634CF74BCD4"/>
+</associations>
+</Column>
+<Column name="DATE_" id="A61F5FF8-9DA1-24F8-CC84-D8E7BDE6CDA1">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASSATTENDANCEDB</sourceObjSchema>
+<sourceObjName>DATE_</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<commentInRDBMS>ORIGINAL NAME:date</commentInRDBMS>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTENDANCE_STATUS" id="D1FFBA9C-A65B-AD77-AE90-6AF5860DE2E6">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>CLASSATTENDANCEDB</sourceObjSchema>
+<sourceObjName>ATTENDANCE_STATUS</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB50F929-D8C6-8B98-244D-D0B06F739087" name="PRIMARY_23">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_23</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D1A8948-5936-B4D4-4699-35816629DC88"/>
+<colUsage columnID="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3"/>
+<colUsage columnID="CEDDD910-EF92-7495-ED05-C6BE0EDD973A"/>
+<colUsage columnID="A61F5FF8-9DA1-24F8-CC84-D8E7BDE6CDA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F2D0C59-8266-AD57-8C69-0847C89B3D79" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="CLASSATTENDANCEDB_IBFK_3">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>CLASSATTENDANCEDB_IBFK_3</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1235E8B2-013E-0ADF-CEB9-37555E828D94" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="FK_ATTENDANCE_CLASSSTUDENTSUBJ">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>FK_ATTENDANCE_CLASSSTUDENTSUBJ</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEDDD910-EF92-7495-ED05-C6BE0EDD973A"/>
+<colUsage columnID="8D1A8948-5936-B4D4-4699-35816629DC88"/>
+<colUsage columnID="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFEB834F-220D-64B6-0721-CB5B53CDB91A" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_23">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_23</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D1A8948-5936-B4D4-4699-35816629DC88"/>
+<colUsage columnID="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3"/>
+<colUsage columnID="CEDDD910-EF92-7495-ED05-C6BE0EDD973A"/>
+<colUsage columnID="A61F5FF8-9DA1-24F8-CC84-D8E7BDE6CDA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A41556B6-DC43-8B26-5197-FA7B2A59113B" name="FK_ATTENDANCE_CLASSSTUDENTSUBJ">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D1A8948-5936-B4D4-4699-35816629DC88"/>
+<colUsage columnID="6ED65CF5-6111-F47C-CE51-B1357CDA4FD3"/>
+<colUsage columnID="CEDDD910-EF92-7495-ED05-C6BE0EDD973A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

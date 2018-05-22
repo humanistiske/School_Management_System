@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B1A721B-D9C0-37EC-4934-5CADCD1EF030" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="STAFFACCOUNTSDB">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>STAFFACCOUNTSDB</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="DAB663A1-61BD-9D08-8312-BB0DD3435D13">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="119964EE-6848-885D-1216-5E279E14816D" referredColumn="4258E255-9E2A-9A5C-A196-CA946F8297E0"/>
+</associations>
+</Column>
+<Column name="IN_HAND_SALARY" id="4E1CAB2A-267C-A8F4-D7C3-A7F543CAC9D6">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>IN_HAND_SALARY</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALLOWANCE" id="351590E9-570F-8D37-3E28-E66BF65CE7DA">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>ALLOWANCE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL_SALARY" id="45D81BDB-1229-01AD-42A3-161CFC2726A0">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>TOTAL_SALARY</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_SALARY_PAYMENT_DATE" id="D21B165B-2EC3-2669-343A-E95C4D344459">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>LAST_SALARY_PAYMENT_DATE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARYSTATUSID" id="2C8D9966-2159-6659-352C-096D75C64AB7">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>SALARYSTATUSID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="937527A2-991B-BABD-BEBC-65C16FE57961" referredColumn="FADE3ABD-FE1E-3AC6-044D-26228AAC1FB1"/>
+</associations>
+</Column>
+<Column name="DATE_OF_JOINING" id="48F54871-8DAB-EBB6-E6E7-85AF3399C9B9">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>DATE_OF_JOINING</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRACT_END_DATE" id="29666EC5-06D8-A79E-4698-FCDF9B95C30A">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>STAFFACCOUNTSDB</sourceObjSchema>
+<sourceObjName>CONTRACT_END_DATE</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0FF74BD-95EA-18B3-3204-D31BBC8BB7BD" name="PRIMARY_13">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_13</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAB663A1-61BD-9D08-8312-BB0DD3435D13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F70EB279-D52D-7CAB-5DBC-C47FB0E96E7F" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_13">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_13</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAB663A1-61BD-9D08-8312-BB0DD3435D13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4480CE9-6B88-89AD-6C81-A8B99B1F0B6E" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="STAFFACCOUNTSDB_IBFK_2">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>STAFFACCOUNTSDB_IBFK_2</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C8D9966-2159-6659-352C-096D75C64AB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="263FC2D5-10B1-0CBE-8F9E-69E9BDF3CAAA" name="STAFFACCOUNTSDB_IBFK_1">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAB663A1-61BD-9D08-8312-BB0DD3435D13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DD45CDF-48AE-8949-8D53-2D7B83537BD4" name="STAFFACCOUNTSDB_IBFK_2">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C8D9966-2159-6659-352C-096D75C64AB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

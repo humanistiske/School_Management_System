@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC3BC78D-6650-CDE1-7C54-4D422E670EE7" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="EXAMENROLLDB">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>EXAMENROLLDB</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="0CDEFD29-FD61-6480-94E8-094E392F2A60">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMENROLLDB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXAMID" id="BD1FBAA0-0ECA-682D-AED1-EE6A30CCC5D7">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMENROLLDB</sourceObjSchema>
+<sourceObjName>EXAMID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="047FC667-AA7C-03D5-390E-BCE9384A6F02" referredColumn="807CC86D-49F3-E96E-57EB-D4985549C940"/>
+</associations>
+</Column>
+<Column name="EXAM_STATUS_ID" id="8F85422C-736E-0009-1832-98FC2B66191B">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>EXAMENROLLDB</sourceObjSchema>
+<sourceObjName>EXAM_STATUS_ID</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:41 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F81837B1-D5C0-9986-CD49-D8C93B2BDCB0" referredColumn="2E50BA8D-2D50-809D-9BC3-D04EA9F6BF45"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="136B4742-C4C0-A137-0E6D-B7D5DBF83F9A" name="PRIMARY_6">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_6</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD1FBAA0-0ECA-682D-AED1-EE6A30CCC5D7"/>
+<colUsage columnID="0CDEFD29-FD61-6480-94E8-094E392F2A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8084F650-EEF0-5CC2-D518-3AAEF1751C07" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="EXAMENROLLDB_IBFK_1">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>EXAMENROLLDB_IBFK_1</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CDEFD29-FD61-6480-94E8-094E392F2A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8C3E297-CF08-52A0-4624-CB3713ED29B1" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="EXAMENROLLDB_IBFK_3">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>EXAMENROLLDB_IBFK_3</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F85422C-736E-0009-1832-98FC2B66191B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4985850-81E7-2BB2-4DE7-C2FFF8E57DE9" schemaObject="AC4F5944-3376-0A55-A713-1C0680F4734C" name="PRIMARY_6">
+<sourceConnName>school_webspace</sourceConnName>
+<sourceObjSchema>SCHOOL_WEBSPACE</sourceObjSchema>
+<sourceObjName>PRIMARY_6</sourceObjName>
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD1FBAA0-0ECA-682D-AED1-EE6A30CCC5D7"/>
+<colUsage columnID="0CDEFD29-FD61-6480-94E8-094E392F2A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2701A13-9380-E3EB-9393-4429AA32D8B8" name="EXAMENROLLDB_IBFK_2">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD1FBAA0-0ECA-682D-AED1-EE6A30CCC5D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="147615CA-4247-E8BA-C926-CCA94CAB47AA" name="EXAMENROLLDB_IBFK_3">
+<createdBy>GaneshC</createdBy>
+<createdTime>2018-02-02 07:23:42 UTC</createdTime>
+<ownerDesignName>SchoolDb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F85422C-736E-0009-1832-98FC2B66191B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
